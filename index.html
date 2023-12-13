@@ -154,11 +154,23 @@
         </li>
       </ul>
     </section>
+    
+    <section id="gif-section">
+      <h2>Show GIF</h2>
+      <p>
+        <span class="btn-show-gif" onclick="toggleGif()">Click here to show GIF</span>
+      </p>
+      <div id="gif-container">
+        <img src="balls 2023-12-12 14-59-19.gif" alt="Bouncing Balls GIF">
+      </div>
+    </section>
+
 
     <script>
-      // Simple JavaScript code can be added for additional interactivity.
-      // For example, you can add code to dynamically change content or interact with the user.
-      // This is optional and depends on your preference.
+      function toggleGif() {
+        var gifContainer = document.getElementById("gif-container");
+        gifContainer.style.display = gifContainer.style.display === "none" ? "block" : "none";
+      }
     </script>
   </body>
 </html>
